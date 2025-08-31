@@ -1230,8 +1230,7 @@ return x(n,t)}}}return x("x",t)}
 if(k.isConversionNode(o.operation))d=null!==(e=this.state.conversionResult)&&void 0!==e&&e.success&&this.state.conversionResult.output?this.state.conversionResult.output:x("conv",c)
 else if(2===u.length){const e=y(u[0].avxType),t=y(u[1].avxType),n=f(u[0].id,e),r=f(u[1].id,t)
 d=((e,t,n)=>{if(e.includes("packs")){const r=t.length+n.length
-return Array.from({length:r},(r,i)=>{const l=((e,t,n,r)=>{const i=e.includes("_mm_")&&!e.includes("_mm256_")&&!e.includes("_mm512_"),l=e.includes("_mm256_"),o=e.includes("_mm512_")
-let u,a
+return Array.from({length:r},(r,i)=>{const l=((e,t,n,r)=>{const i=e.includes("_mm_")&&!e.includes("_mm256_")&&!e.includes("_mm512_"),l=e.includes("_mm256_"),o=e.includes("_mm512_")let u,a
 return i?(u=4>t,a=t%4):l?(u=8>t,a=t%8):o?(u=16>t,a=t%16):(u=4>t,a=t%4),u?n[a]||"a".concat(a+1):r[a]||"b".concat(a+1)})(e,i,t,n)
 return"Sat16(".concat(l,")")})}const r=Math.min(t.length,n.length)
 return Array.from({length:r},(r,i)=>{const l=t[i],o=n[i],u=/^[a-zA-Z_][a-zA-Z0-9_]*[0-9]+$/.test(l),a=/^[a-zA-Z_][a-zA-Z0-9_]*[0-9]+$/.test(o),s=u?l:"(".concat(l,")"),c=a?o:"(".concat(o,")")
