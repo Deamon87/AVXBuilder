@@ -1,9 +1,10 @@
 # AVX Builder - React Flow Node Editor
-
 A React-based flow editor for creating and connecting nodes with different data types. Built using TypeScript and class-based React components.
 
-The AVX Builder can generate C++ code with SIMD intrinsics for your node graphs:
+## Demo
+Try the live demo at: https://deamon87.github.io/AVXBuilder/
 
+The AVX Builder can generate C++ code with SIMD intrinsics for your node graphs:
 - **Single Node Selection**: Only works when exactly one node is selected
 - **Dependency Resolution**: Automatically includes all connected input nodes
 - **SIMD Intrinsics**: Generates appropriate SSE/AVX intrinsic functions
